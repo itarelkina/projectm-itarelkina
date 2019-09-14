@@ -60,8 +60,14 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   # devise requirement 
-  
-config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
-config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => '8b900aa053c1d0',
+    :password => '2496a45519af93',
+    :address => 'smtp.mailtrap.io',
+    :domain => 'smtp.mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
+  }
+config.action_mailer.default_url_options = { host: 'localhost', port: 3030 }
 end
