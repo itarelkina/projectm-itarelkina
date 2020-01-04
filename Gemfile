@@ -43,7 +43,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem "wysiwyg-rails"
 gem 'pg'
 gem "figaro"
-gem 'simple_form', '~> 4.1'
+gem 'simple_form', '~> 5.0'
 gem 'public_activity', '~> 1.6', '>= 1.6.3'
 
 # Reduces boot times through caching; required in config/boot.rb
